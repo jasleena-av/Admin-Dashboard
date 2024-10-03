@@ -1,14 +1,20 @@
 {
   "name": "dashboard",
   "private": true,
+  "homepage": "https://<jasleena-av>.github.io/<Admin-Dashboard>",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    
+
   },
+
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -16,6 +22,7 @@
     "@mui/material": "^6.1.2",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.4",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-chartjs-2": "^5.2.0",
@@ -37,4 +44,6 @@
     "tailwindcss": "^3.4.13",
     "vite": "^5.4.1"
   }
+  
+ 
 }
